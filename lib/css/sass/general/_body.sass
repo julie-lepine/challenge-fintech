@@ -1,0 +1,23 @@
+body
+    position: relative
+    background-image: $bg_light
+    font-family: 'helvetica', sans-serif
+    font-size: 16px
+    line-height: 1.5
+    color: #333
+    margin: 0
+    padding: 0
+    min-width: 320px
+    max-width: 100%
+    min-height: 100vh
+    max-height: 100%
+    overflow-x: hidden
+    overflow-y: auto
+    -webkit-overflow-scrolling: touch
+    -webkit-tap-highlight-color: transparent
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    &.dark
+        background-image: $bg_dark
+        header, main, footer, .modal
+            filter: invert(1) hue-rotate(180deg) !important
